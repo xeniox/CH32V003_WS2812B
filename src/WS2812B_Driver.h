@@ -145,7 +145,7 @@ static void WS2812_SendBit(WS2812_Channel_t* channel, uint8_t bit) {
         __asm__("nop");__asm__("nop");__asm__("nop");__asm__("nop");
         __asm__("nop");__asm__("nop");__asm__("nop");__asm__("nop");
         __asm__("nop");__asm__("nop");__asm__("nop");__asm__("nop");
-        __asm__("nop");__asm__("nop");//__asm__("nop");
+        __asm__("nop");__asm__("nop");__asm__("nop");__asm__("nop");
         
         channel->port->BCR = channel->pin_mask;
     } else {
